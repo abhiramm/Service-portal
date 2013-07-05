@@ -1,0 +1,21 @@
+<%= simple_form_for(@conference) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :schedule %>
+    <%= f.input :cost %>
+    <%= f.input :video %>
+    <%= f.input :audio %>
+    <%= f.input :doc %>
+    <%= f.input :presentations %>
+    <%= f.input :offered_sessions %>
+    <%= f.input :interested_sessions %>
+    <%= f.input :user_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130705114537) do
+ActiveRecord::Schema.define(:version => 20130705120009) do
+
+  create_table "conferences", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "schedule"
+    t.string   "cost"
+    t.string   "video"
+    t.string   "audio"
+    t.string   "doc"
+    t.string   "presentations"
+    t.boolean  "offered_sessions"
+    t.boolean  "interested_sessions"
+    t.integer  "user_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
 
   create_table "roles", :force => true do |t|
     t.string   "name"
