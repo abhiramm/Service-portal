@@ -1,6 +1,6 @@
 Service::Application.routes.draw do
   resources :conferences
-
+  bigbluebutton_routes :default
 
   authenticated :user do
     root :to => 'conferences#index'

@@ -34,6 +34,11 @@ GEM
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    bigbluebutton-api-ruby (1.1.1)
+      xml-simple (>= 1.1.1)
+    bigbluebutton_rails (1.2.0)
+      bigbluebutton-api-ruby (~> 1.1.0)
+      rails (>= 3.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.2.0)
@@ -178,6 +183,7 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
+    xml-simple (1.1.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -186,6 +192,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
+  bigbluebutton_rails
   binding_of_caller
   bootstrap-sass
   cancan

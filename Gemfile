@@ -15,6 +15,7 @@ gem 'figaro'
 gem 'libv8'
 gem 'rolify'
 gem 'simple_form'
+gem 'bigbluebutton_rails'
 group :assets do
   gem 'therubyracer', :platform=>:ruby, :require=>"v8"
 end
